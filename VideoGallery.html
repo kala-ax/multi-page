@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title> Joji's Best Album </title>
+</head>
+<body>
+    <header class="clearfix">
+        <img id="logoimage" src="../VideoGallery/images/nectar.jpeg">
+        <h2> Nectar by Joji </h2>
+    </header>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="#vid1"> NECTAR </a></li>
+                <li><a href="#vid2"> LIKE YOU DO </a></li>
+                <li><a href="#vid3"> MODUS </a></li>
+                <li><a href="#vid4"> YOUR MAN </a></li>
+                <li><a href="#vid5"> AFTERTHOUGHT </a></li>
+            </ul>
+        </nav>
+    <main>
+        <section>
+            <article id="vid1">
+                <h4></h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/kB0qFXEaAsE"></iframe>
+                </div>
+                <div class="caption">
+                    The first hand understanding to the greatest album ever made by Joji.
+                    
+                </div>
+            </article>
+            <article id="vid2">
+                <h4></h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/Bv-1BnoB75k"></iframe>
+                </div>
+                <div class="caption">
+                    <p>Joji's top song in Nectar:</p>
+
+                    <p>“Like You Do” finds Joji reflecting on a relationship through an emotional piano ballad.
+
+                        He sings about how his and his partner's dreams are leading them in different directions, and will inevitably end things between them. Joji is powerlessly in love with her, and without her, he feels incomplete.
+                        
+                        </p>
+                </div>
+            </article>
+            <article id="vid3">
+                <h4></h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/Vu0nRz_bQ0Y"></iframe>
+                </div>
+                <div class="caption">
+                    <p>On “MODUS”, Joji describes the pressures of the music industry as they try to mould him into a pop star. He feels tied down by those that he describes as being his “programmers.” The word MODUS might be a play to the Latin phrase “Modus Vivendi” meaning “an arrangement allowing people or groups of people who have different opinions or beliefs to work or live together.”
+
+                        <p>I don't feel the way they programmed me to feel today.</p>
+                        
+                        Joji knows that he is capable of achieving complete artistic freedom and strives to make music that he can feel completely proud of.</p>
+
+                </div>
+            </article>
+            <article id="vid4">
+                <h4></h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/RrtkU7i0qD8"></iframe>
+                    
+                </div>
+                <div class="caption">
+                   <p>“Your Man,” described as a “pulsing ode to eyes-closed, four-on-the-floor escapism,” serves as the closing track for Nectar and sees Joji comfort his crush after an initial breakup between her and her previous lover.</p>
+                    My personal favorite song in his entire album
+                </div>
+            </article>
+            <article id="vid5">
+                <h4></h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/ujriV3vkC9w"></iframe>
+
+                </div>
+                <div class="caption">
+                    <p>The song describes the aftermath of a dysfunctional relationship. Joji reflects on where he and his partner went wrong and wonders how the partner feels about the situation.
+
+                        <p>Despite a messy break-up, Joji does not bear his ex any ill will. He only prays that both of them will find happiness and solitude, and treasure the time they had together.</p></p>
+
+                </div>
+            </article>
+        </section>
+
+        <div><button onclick="topFunction()" id="cornerbtn" title="Go to top">Return To Top</button></div>
+
+        <script>
+            // When the user scrolls down 800px from the top of the document, show the button
+             window.onscroll = function() {scrollFunction()};
+         
+             function scrollFunction() {
+               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                 document.getElementById("cornerbtn").style.display = "block";
+               } else {
+                 document.getElementById("cornerbtn").style.display = "none";
+               }
+             }
+         
+             // When the user clicks on the button, scroll to the top of the document
+             function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+         </script>
+
+    </main>
+    <footer>
+        <p>&copy; 2022 Mykala Augustin </p>
+    </footer>
+</body>
+</html>
