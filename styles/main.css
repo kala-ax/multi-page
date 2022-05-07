@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+html {
+    background-image: url("../images/22.jpeg");
+    background-attachment: fixed;
+}
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 110%;
+    background-image: url(../images/jojimerch.jpeg);
+    background-attachment: fixed;
+}
+header {
+    background-image: url(../images/jojimerch.jpeg);
+    background-attachment: fixed;
+    padding: 30px 0;
+    border-bottom: 3px ridge silver;
+}
+header h2 {
+    font-size: 350%;
+    padding-top: 5px;
+    color: black;
+    text-shadow: 5px 5px 20px silver, -5px 5px 20px silver, 5px -5px 20px silver, -5px -5px 20px;
+}
+#logoimage {
+    max-width: 100px;
+    width: 100%;
+    float: left;
+    margin: 0 2em;
+    border: 3px ridge black;
+    border-radius: 60px;
+}
+.navbar {
+    border-bottom: 3px ridge black;
+}
+#nav_list {
+    width: 15%;
+    float: left;
+    margin: 3em 0 0 3em;
+    position: sticky;
+    top: 150px;
+}
+#nav_list ul {
+    list-style: none;
+}
+#nav_list ul li {
+    background-color: whitesmoke;
+    margin-bottom: 7px;
+    border: 3px ridge silver;
+    border-radius: 15px;
+    margin-left: 0;
+    margin-right: .5em;
+    transition: all .5s;
+}
+#nav_list ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 1em;
+    color: white;
+    transition: all .5s;
+}
+#nav_list ul li a:hover {
+    color:maroon;
+}
+#nav_list ul li:hover {
+    background-color: white;
+    margin-left: .5em;
+    margin-right: 0;
+}
+.vidgallery {
+    width: 75%;
+    float: left;
+    margin: 30px auto;
+}
+article {
+    width: 75%;
+    background-color: white;
+    padding: 30px 0;
+    margin: 30px auto;
+}
+article h4 {
+    font-size: 150%;
+    color: white;
+    padding: 0 0 15px 1em;
+}
+.homepagecontainer {
+    margin: 10px auto;
+    list-style: none;
+
+}
+.homepagecontainer img {
+    float: left;
+    max-width: 500px;
+    border: 3px ridge black;
+    border-radius: 30px;
+    margin: 50px 3em;
+    width: 100%;
+}
+.videowrapper {
+    width: 75%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+    box-shadow: 5px 5px 15px 10px white;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.caption {
+    margin: 30px 6em;
+    color: white;
+}
+.caption p {
+    margin-bottom: 10px;
+}
+.caption ul {
+    margin: 30px 0 0 1em;
+}
+.caption ul li {
+    margin-left: 2em;
+    line-height: 30px;
+}
+blockquote {
+    margin: 10px 1.5em;
+    border-left: 3px black;
+    padding-left: .5em;
+}
+.sig {
+    font-style: italic;
+    color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding: 5px 30px 5px 0;
+    text-align: right;
+    border-radius: 15px;
+    background-color: black;
+}
+
+#cornerbtn {
+    display: none; 
+    position: fixed;
+    left: 5px;
+    bottom: 150px;
+    z-index: 99; 
+    border: 1px solid black;
+    outline: none; 
+    font-weight: bold;
+    cursor: pointer; 
+    padding: .5em .5em;
+    margin: 0 1em 3px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.25);
+    color: white;
+    transition: all .5s;
+ }
+ 
+ #cornerbtn:hover {
+    background-color: rgba(0,0,0,1);
+    color: white;
+    border: 1px solid whitesmoke;
+ }
+footer {
+    clear: both;
+    background-image: url(../images/22.jpeg);
+    padding: 25px 0;
+    border-top: 3px ridge black;
+}
+footer p {
+    text-align: center;
+    font-size: 80%;
+    color: white;
+}
+footer img {
+    max-width: 100px;
+    display: block;
+    margin: 1em auto;
+}
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 80%;
+    }
+    header {
+        text-align: center;
+        
+    }
+    #logoimage {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    #nav_list {
+        display: none;
+    }
+    section {
+        float: none;
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+    .videowrapper {
+        width: 100%;
+        border: none;
+    }
+    .caption {
+        margin: 30px 2em;
+    }
+  }
